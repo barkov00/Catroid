@@ -29,6 +29,9 @@ public interface Phiro extends BluetoothDevice {
 
 	void playTone(int toneFrequency, int duration);
 
+	void setLeftServoPosition(int angle);
+	void setRightServoPosition(int angle);
+
 	void moveLeftMotorForward(int speed);
 	void moveLeftMotorBackward(int speed);
 

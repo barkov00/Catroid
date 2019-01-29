@@ -2021,5 +2021,11 @@ needs read and write access to it. You can always change permissions through you
 
     <string name="sans_serif_font" translatable="false">sans_serif</string>
     <string name="serif_font" translatable="false">serif</string>
+    <string name="brick_phiro_servo_action">Servo</string>
+    <string name="phiro_servo_angle">Angle</string>
+    <string name="phiro_servo_left">Left</string>
+    <string name="phiro_servo_right">Right</string>
+    <string name="phiro_servo_both">Both</string>
+    <string name="angle_symbol" translatable="false">°</string>
 
 </resources>

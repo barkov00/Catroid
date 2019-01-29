@@ -24,6 +24,7 @@
 package org.catrobat.catroid.ui.fragment;
 
 import android.content.Context;
+import android.content.IntentFilter;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -33,11 +34,14 @@ import org.catrobat.catroid.content.bricks.Brick;
 import org.catrobat.catroid.content.bricks.FormulaBrick;
 import org.catrobat.catroid.formulaeditor.Formula;
 
+import java.util.Locale;
+
 public class SingleSeekBar {
 
 	private FormulaBrick formulaBrick;
 	private Brick.BrickField brickField;
 	private int seekBarTitleId;
+	private int max;
 
 	private TextView valueTextView;
 
@@ -47,10 +51,20 @@ public class SingleSeekBar {
 		this.seekBarTitleId = seekBarTitleId;
 	}
 
+	public SingleSeekBar(FormulaBrick formulaBrick, Brick.BrickField brickField, int seekBarTitleId, int max) {
+		this.formulaBrick = formulaBrick;
+		this.brickField = brickField;
+		this.seekBarTitleId = seekBarTitleId;
+		this.max = max;
+	}
+
 	public View getView(final Context context) {
 		View view = View.inflate(context, R.layout.single_seek_bar_view, null);
 		view.setFocusableInTouchMode(true);
 		view.requestFocus();
+
+		TextView maxValueText = view.findViewById(R.id.maxValue);
+		maxValueText.setText(String.format(Locale.getDefault(), "%d", max));
 
 		TextView seekBarTitle = view.findViewById(R.id.single_seekbar_title);
 		seekBarTitle.setText(seekBarTitleId);
@@ -64,6 +78,7 @@ public class SingleSeekBar {
 		});
 
 		SeekBar seekBar = view.findViewById(R.id.single_seekbar_seekbar);
+		seekBar.setMax(max);
 		String currentStringValue = formulaBrick.getFormulaWithBrickField(brickField).getTrimmedFormulaString(context);
 		seekBar.setProgress(Double.valueOf(currentStringValue.replace(",", ".")).intValue());
 		valueTextView.setText(String.valueOf(seekBar.getProgress()));

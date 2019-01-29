@@ -1972,5 +1972,12 @@
   <string name="TeraByte_short">TB</string>
   <string name="PetaByte_short">PB</string>
   <string name="ExaByte_short">EB</string>
-  <!--  -->
+
+  <!-- PhiroServoBrick -->
+  <string name="brick_phiro_servo_action">Сервомашинки</string>
+  <string name="phiro_servo_angle">Угол</string>
+  <string name="phiro_servo_left">Левая</string>
+  <string name="phiro_servo_right">Правая</string>
+  <string name="phiro_servo_both">Обе</string>
+
 </resources>

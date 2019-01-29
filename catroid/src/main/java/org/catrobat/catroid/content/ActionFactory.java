@@ -109,6 +109,7 @@ import org.catrobat.catroid.content.actions.PhiroMotorStopAction;
 import org.catrobat.catroid.content.actions.PhiroPlayToneAction;
 import org.catrobat.catroid.content.actions.PhiroRGBLightAction;
 import org.catrobat.catroid.content.actions.PhiroSensorAction;
+import org.catrobat.catroid.content.actions.PhiroServoAction;
 import org.catrobat.catroid.content.actions.PlaySoundAction;
 import org.catrobat.catroid.content.actions.PointInDirectionAction;
 import org.catrobat.catroid.content.actions.PointToAction;
@@ -170,6 +171,7 @@ import org.catrobat.catroid.content.bricks.PhiroMotorMoveForwardBrick;
 import org.catrobat.catroid.content.bricks.PhiroMotorStopBrick;
 import org.catrobat.catroid.content.bricks.PhiroPlayToneBrick;
 import org.catrobat.catroid.content.bricks.PhiroRGBLightBrick;
+import org.catrobat.catroid.content.bricks.PhiroServoBrick;
 import org.catrobat.catroid.content.bricks.UserBrick;
 import org.catrobat.catroid.content.eventids.BroadcastEventId;
 import org.catrobat.catroid.content.eventids.EventId;
@@ -434,6 +436,16 @@ public class ActionFactory extends Actions {
 			Formula speed) {
 		PhiroMotorMoveForwardAction action = action(PhiroMotorMoveForwardAction.class);
 		action.setMotorEnum(motorEnum);
+		action.setSprite(sprite);
+		action.setSpeed(speed);
+		return action;
+	}
+
+	public Action createPhiroServoActionAction(Sprite sprite, PhiroServoBrick.Servo
+			servoEnum,
+			Formula speed) {
+		PhiroServoAction action = action(PhiroServoAction.class);
+		action.setServoEnum(servoEnum);
 		action.setSprite(sprite);
 		action.setSpeed(speed);
 		return action;

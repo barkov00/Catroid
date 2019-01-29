@@ -280,4 +280,10 @@
         <item>dyslexic</item>
     </string-array>
 
+    <string-array name="brick_phiro_select_servo_spinner">
+        <item>@string/phiro_servo_left</item>
+        <item>@string/phiro_servo_right</item>
+        <item>@string/phiro_servo_both</item>
+    </string-array>
+
 </resources>

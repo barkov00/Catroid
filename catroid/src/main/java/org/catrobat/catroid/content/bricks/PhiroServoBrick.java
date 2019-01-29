@@ -33,36 +33,83 @@ import org.catrobat.catroid.R;
 import org.catrobat.catroid.content.Sprite;
 import org.catrobat.catroid.content.actions.ScriptSequenceAction;
 import org.catrobat.catroid.formulaeditor.Formula;
+import org.catrobat.catroid.formulaeditor.FormulaElement;
+import org.catrobat.catroid.ui.fragment.FormulaEditorFragment;
+import org.catrobat.catroid.ui.fragment.SingleSeekBar;
 
 import java.util.List;
 
-public class PhiroPlayToneBrick extends FormulaBrick {
+public class PhiroServoBrick extends FormulaBrick {
 
 	private static final long serialVersionUID = 1L;
 
-	private String tone;
+	private String motor;
 
-	public enum Tone {
-		DO, RE, MI, FA, SO, LA, TI
+	public enum Servo {
+		SERVO_LEFT, SERVO_RIGHT, SERVO_BOTH
 	}
 
-	public PhiroPlayToneBrick() {
-		addAllowedBrickField(BrickField.PHIRO_DURATION_IN_SECONDS, R.id.brick_phiro_play_tone_duration_edit_text);
+	public PhiroServoBrick() {
+		addAllowedBrickField(BrickField.PHIRO_SERVO_ANGLE, R.id.brick_phiro_servo_action_speed_edit_text);
 	}
 
-	public PhiroPlayToneBrick(Tone toneEnum, int duration) {
-		this(toneEnum, new Formula(duration));
+	public PhiroServoBrick(Servo servoEnum, int angle) {
+		this(servoEnum, new Formula(angle));
 	}
 
-	public PhiroPlayToneBrick(Tone toneEnum, Formula formula) {
+	public PhiroServoBrick(Servo motorEnum, Formula formula) {
 		this();
-		tone = toneEnum.name();
-		setFormulaWithBrickField(BrickField.PHIRO_DURATION_IN_SECONDS, formula);
+		motor = motorEnum.name();
+		setFormulaWithBrickField(BrickField.PHIRO_SERVO_ANGLE, formula);
 	}
 
 	@Override
 	public int getViewResource() {
-		return R.layout.brick_phiro_play_tone;
+		return R.layout.brick_phiro_servo;
+	}
+
+	@Override
+	public View getView(Context context) {
+		super.getView(context);
+		ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter.createFromResource(context,
+				R.array.brick_phiro_select_servo_spinner, android.R.layout.simple_spinner_item);
+		spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+		Spinner spinner = view.findViewById(R.id.brick_phiro_servo_action_spinner);
+		spinner.setAdapter(spinnerAdapter);
+		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long arg3) {
+				motor = Servo.values()[position].name();
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+			}
+		});
+		spinner.setSelection(Servo.valueOf(motor).ordinal());
+		return view;
+	}
+
+	@Override
+	public View getCustomView(Context context) {
+		return new SingleSeekBar(this, BrickField.PHIRO_SERVO_ANGLE, R.string.phiro_servo_angle, 180).getView
+				(context);
+	}
+
+	@Override
+	public void showFormulaEditorToEditFormula(View view) {
+		if (isSpeedOnlyANumber()) {
+			FormulaEditorFragment.showCustomFragment(view.getContext(), this, BrickField.PHIRO_SERVO_ANGLE);
+		} else {
+			super.showFormulaEditorToEditFormula(view);
+		}
+	}
+
+	private boolean isSpeedOnlyANumber() {
+		return getFormulaWithBrickField(BrickField.PHIRO_SERVO_ANGLE)
+				.getRoot().getElementType() == FormulaElement.ElementType.NUMBER;
 	}
 
 	@Override
@@ -72,37 +119,9 @@ public class PhiroPlayToneBrick extends FormulaBrick {
 	}
 
 	@Override
-	public View getView(Context context) {
-		super.getView(context);
-
-		ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter.createFromResource(context,
-				R.array.brick_phiro_select_tone_spinner, android.R.layout.simple_spinner_item);
-		spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-		Spinner spinner = view.findViewById(R.id.brick_phiro_select_tone_spinner);
-		spinner.setAdapter(spinnerAdapter);
-		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-			@Override
-			public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long arg3) {
-				tone = Tone.values()[position].name();
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
-			}
-		});
-		spinner.setSelection(Tone.valueOf(tone).ordinal());
-		setSecondsLabel(view, BrickField.PHIRO_DURATION_IN_SECONDS);
-		return view;
-	}
-
-	@Override
 	public List<ScriptSequenceAction> addActionToSequence(Sprite sprite, ScriptSequenceAction sequence) {
-		sequence.addAction(sprite.getActionFactory().createPhiroPlayToneActionAction(sprite, Tone.valueOf(tone),
-				getFormulaWithBrickField(BrickField.PHIRO_DURATION_IN_SECONDS)));
-		sequence.addAction(sprite.getActionFactory()
-				.createDelayAction(sprite, getFormulaWithBrickField(BrickField.PHIRO_DURATION_IN_SECONDS)));
+		sequence.addAction(sprite.getActionFactory().createPhiroServoActionAction(sprite,
+				Servo.valueOf(motor), getFormulaWithBrickField(BrickField.PHIRO_SERVO_ANGLE)));
 		return null;
 	}
 }

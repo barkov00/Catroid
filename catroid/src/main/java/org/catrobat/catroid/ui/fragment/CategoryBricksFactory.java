@@ -118,6 +118,7 @@ import org.catrobat.catroid.content.bricks.PhiroMotorMoveForwardBrick;
 import org.catrobat.catroid.content.bricks.PhiroMotorStopBrick;
 import org.catrobat.catroid.content.bricks.PhiroPlayToneBrick;
 import org.catrobat.catroid.content.bricks.PhiroRGBLightBrick;
+import org.catrobat.catroid.content.bricks.PhiroServoBrick;
 import org.catrobat.catroid.content.bricks.PlaceAtBrick;
 import org.catrobat.catroid.content.bricks.PlaySoundAndWaitBrick;
 import org.catrobat.catroid.content.bricks.PlaySoundBrick;
@@ -379,6 +380,7 @@ public class CategoryBricksFactory {
 			motionBrickList.add(new PhiroMotorMoveBackwardBrick(PhiroMotorMoveBackwardBrick.Motor.MOTOR_LEFT,
 					BrickValues.PHIRO_SPEED));
 			motionBrickList.add(new PhiroMotorStopBrick(PhiroMotorStopBrick.Motor.MOTOR_BOTH));
+			motionBrickList.add(new PhiroServoBrick(PhiroServoBrick.Servo.SERVO_LEFT, 90));
 		}
 
 		return motionBrickList;
@@ -573,6 +575,7 @@ public class CategoryBricksFactory {
 		phiroProBrickList.add(new PhiroMotorMoveBackwardBrick(PhiroMotorMoveBackwardBrick.Motor.MOTOR_LEFT,
 				BrickValues.PHIRO_SPEED));
 		phiroProBrickList.add(new PhiroMotorStopBrick(PhiroMotorStopBrick.Motor.MOTOR_BOTH));
+		phiroProBrickList.add(new PhiroServoBrick(PhiroServoBrick.Servo.SERVO_LEFT, 90));
 		phiroProBrickList.add(new PhiroPlayToneBrick(PhiroPlayToneBrick.Tone.DO,
 				BrickValues.PHIRO_DURATION));
 		phiroProBrickList.add(new PhiroRGBLightBrick(PhiroRGBLightBrick.Eye.BOTH, BrickValues.PHIRO_VALUE_RED,

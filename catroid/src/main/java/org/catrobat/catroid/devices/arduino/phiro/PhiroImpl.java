@@ -51,6 +51,7 @@ public class PhiroImpl implements Phiro {
 
 	private static final int MIN_VALUE = 0;
 	private static final int MAX_VALUE = 255;
+	private static final int PIN_SERVO_CONTROLLER = 2;
 	private static final int PIN_SPEAKER_OUT = 3;
 
 	private static final int PIN_RGB_RED_RIGHT = 4;
@@ -96,6 +97,16 @@ public class PhiroImpl implements Phiro {
 		}
 		currentStopPlayToneTask = new StopPlayToneTask();
 		timer.schedule(currentStopPlayToneTask, durationInSeconds * 1000);
+	}
+
+	@Override
+	public void setLeftServoPosition(int angle) {
+		sendAnalogFirmataMessage(PIN_SERVO_CONTROLLER, angle | 0x100);
+	}
+
+	@Override
+	public void setRightServoPosition(int angle) {
+		sendAnalogFirmataMessage(PIN_SERVO_CONTROLLER, angle);
 	}
 
 	Timer timer = new Timer();
