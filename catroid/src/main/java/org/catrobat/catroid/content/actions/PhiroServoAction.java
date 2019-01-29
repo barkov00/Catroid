@@ -38,8 +38,6 @@ import org.catrobat.catroid.formulaeditor.Formula;
 import org.catrobat.catroid.formulaeditor.InterpretationException;
 
 public class PhiroServoAction extends TemporalAction {
-	private static final int MIN_SPEED = 0;
-	private static final int MAX_SPEED = 100;
 
 	private PhiroServoBrick.Servo motorEnum;
 	private Formula speed;
@@ -57,10 +55,10 @@ public class PhiroServoAction extends TemporalAction {
 			Log.d(getClass().getSimpleName(), "Formula interpretation for this specific Brick failed.", interpretationException);
 		}
 
-		if (angleValue < MIN_SPEED) {
-			angleValue = MIN_SPEED;
-		} else if (angleValue > MAX_SPEED) {
-			angleValue = MAX_SPEED;
+		if (angleValue < 0) {
+			angleValue = 0;
+		} else if (angleValue > 180) {
+			angleValue = 180;
 		}
 
 		Phiro phiro = btService.getDevice(BluetoothDevice.PHIRO);

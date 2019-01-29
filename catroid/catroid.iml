@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":catroid" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="Catroid" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":catroid" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
@@ -25,9 +25,15 @@
       <configuration version="3" platform="JVM 1.8" useProjectSettings="false">
         <compilerSettings />
         <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/catroidDebug" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="catroid_catroidDebug" />
           <option name="jvmTarget" value="1.8" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
           <option name="languageVersion" value="1.2" />
-          <option name="apiVersion" value="1.1" />
+          <option name="apiVersion" value="1.2" />
           <option name="pluginOptions">
             <array />
           </option>
@@ -159,7 +165,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/splits-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
@@ -167,136 +172,136 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-analytics-impl-12.0.0" level="project" />
-    <orderEntry type="library" name="com.github.billthefarmer:mididriver-v1.13" level="project" />
-    <orderEntry type="library" name="com.parrot:libARNetwork-3.12.6" level="project" />
-    <orderEntry type="library" name="com.android.support:transition-27.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support.test.espresso:espresso-contrib-3.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.squareup:javawriter:2.1.1@jar" level="project" />
-    <orderEntry type="library" name="com.badlogicgames.gdx:gdx-backend-android:1.6.2@jar" level="project" />
-    <orderEntry type="library" name="io.fabric.sdk.android:fabric-1.3.17" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-cast-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-auth-base-license-12.0.0" level="project" />
-    <orderEntry type="library" name="ar.com.hjg:pngj:2.1.0@jar" level="project" />
-    <orderEntry type="library" name="com.parrot:libARUpdater-3.12.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-base-12.0.0" level="project" />
-    <orderEntry type="library" name="org.catrobat.paintroid:paintroid-2.1.2" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-basement-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-iid-12.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support.test.uiautomator:uiautomator-v18-2.1.2" level="project" />
-    <orderEntry type="library" name="android.arch.lifecycle:viewmodel-1.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
-    <orderEntry type="library" name="com.parrot:libARDiscovery-3.12.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="net.sf.kxml:kxml2:2.3.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support:multidex-instrumentation-1.0.2" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-auth-api-phone-license-12.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="__local_aars__:D.\repos\Catroid\catroid\src\androidTest\libs\the-missing-android-xml-junit-test-runner-release-1.3_2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="net.bytebuddy:byte-buddy-agent:1.6.14@jar" level="project" />
-    <orderEntry type="library" name="com.squareup.picasso:picasso:2.5.2@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\repos\Catroid\catroid\src\main\libs\ardrone-natives-for-gradle.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\repos\Catroid\catroid\src\main\libs\FirmataSerial-1.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.jakewharton.android.repackaged:libcore-dex:7.1.0_r7@jar" level="project" />
-    <orderEntry type="library" name="com.squareup.okio:okio:1.3.0@jar" level="project" />
-    <orderEntry type="library" name="com.google.guava:guava:19.0@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:support-core-utils-27.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support.test.espresso:espresso-core-3.0.1" level="project" />
-    <orderEntry type="library" name="com.android.support:support-annotations:27.1.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="org.objenesis:objenesis:2.5@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-analytics-impl-license-12.0.0" level="project" />
-    <orderEntry type="library" name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.41@jar" level="project" />
-    <orderEntry type="library" name="com.parse.bolts:bolts-applinks:1.4.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.linkedin.dexmaker:dexmaker:2.2.0@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:customtabs-27.1.0" level="project" />
-    <orderEntry type="library" name="com.parrot:libARDataTransfer-3.12.6" level="project" />
-    <orderEntry type="library" name="android.arch.lifecycle:runtime-1.1.0" level="project" />
-    <orderEntry type="library" name="com.android.support:support-vector-drawable-27.1.0" level="project" />
-    <orderEntry type="library" name="com.badlogicgames.gdx:gdx:1.6.2@jar" level="project" />
-    <orderEntry type="library" name="android.arch.lifecycle:common:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:cardview-v7-27.1.0" level="project" />
-    <orderEntry type="library" name="com.parse.bolts:bolts-android:1.4.0@jar" level="project" />
-    <orderEntry type="library" name="com.parrot:libARStream2-3.12.6" level="project" />
-    <orderEntry type="library" name="com.parrot:libARMedia-3.12.6" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-tagmanager-v4-impl-license-12.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="org.hamcrest:hamcrest-library:1.3@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:support-core-ui-27.1.0" level="project" />
-    <orderEntry type="library" name="javax.jmdns:jmdns:3.4.1@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-analytics-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.crashlytics.sdk.android:crashlytics-2.6.8" level="project" />
-    <orderEntry type="library" scope="TEST" name="tools.fastlane:screengrab-1.1.0" level="project" />
-    <orderEntry type="library" name="com.parrot:libARMavlink-3.12.6" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-tasks-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-auth-base-12.0.0" level="project" />
-    <orderEntry type="library" name="com.crashlytics.sdk.android:crashlytics-core-2.3.17" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-analytics-12.0.0" level="project" />
-    <orderEntry type="library" name="com.badlogicgames.gdx:gdx-box2d:1.6.2@jar" level="project" />
-    <orderEntry type="library" name="com.parrot:libARController-3.12.6" level="project" />
-    <orderEntry type="library" name="com.android.support:appcompat-v7-27.1.0" level="project" />
-    <orderEntry type="library" name="com.crashlytics.sdk.android:answers-1.3.13" level="project" />
-    <orderEntry type="library" name="com.google.code.gson:gson:2.8.0@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:design-27.1.0" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-common-12.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="androidx.test.uiautomator:uiautomator-2.2.0" level="project" />
-    <orderEntry type="library" name="com.getkeepsafe.taptargetview:taptargetview-1.11.0" level="project" />
-    <orderEntry type="library" name="com.android.support:recyclerview-v7-27.1.0" level="project" />
-    <orderEntry type="library" name="com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-base-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-auth-12.0.0" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\repos\Catroid\catroid\src\main\libs\Firmata-2.6.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-common-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.parrot:libmux-3.12.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support.test:runner-1.0.1" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-cast-12.0.0" level="project" />
-    <orderEntry type="library" name="com.android.support.test.espresso:espresso-idling-resource-3.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="org.hamcrest:hamcrest-core:1.3@jar" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-core-12.0.0" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-analytics-impl-12.0.0" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\repos\Catroid\catroid\src\main\libs\flowtextview-2.0.2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="com.thoughtworks.xstream:xstream:1.4.7@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-auth-api-phone-12.0.0" level="project" />
-    <orderEntry type="library" name="com.parrot:libARNetworkAL-3.12.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:2.0@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-tagmanager-v4-impl-12.0.0" level="project" />
-    <orderEntry type="library" name="com.android.support:multidex-1.0.3" level="project" />
-    <orderEntry type="library" name="com.android.support:animated-vector-drawable-27.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.linkedin.dexmaker:dexmaker-mockito:2.2.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.jakewharton.android.repackaged:dalvik-dx:7.1.0_r7@jar" level="project" />
-    <orderEntry type="library" name="com.facebook.android:facebook-android-sdk-4.14.1" level="project" />
-    <orderEntry type="library" name="com.github.oliewa92:MidiDroid-v1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support.test.espresso:espresso-web-3.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="junit:junit:4.12@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-tasks-12.0.0" level="project" />
-    <orderEntry type="library" name="android.arch.core:common:1.1.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="org.ccil.cowan.tagsoup:tagsoup:1.2@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="javax.inject:javax.inject:1@jar" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-basement-12.0.0" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\repos\Catroid\catroid\src\main\libs\ParrotARDroneCatroidAdaptation-8a582f1dc8.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="com.koushikdutta.async:androidasync-2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="org.mockito:mockito-core:2.8.47@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="net.bytebuddy:byte-buddy:1.6.14@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support.test:rules-1.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="com.android.support.test.espresso:espresso-intents-3.0.1" level="project" />
-    <orderEntry type="library" name="com.parrot:libARCommands-3.12.6" level="project" />
-    <orderEntry type="library" name="com.android.support:palette-v7-27.1.0" level="project" />
-    <orderEntry type="library" name="com.parrot:libARSAL-3.12.6" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-analytics-12.0.0" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-analytics-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.parrot:arsdk-3.12.6" level="project" />
-    <orderEntry type="library" name="com.android.support:support-compat-27.1.0" level="project" />
-    <orderEntry type="library" name="com.parrot:libARStream-3.12.6" level="project" />
-    <orderEntry type="library" name="org.jetbrains.kotlin:kotlin-stdlib:1.2.41@jar" level="project" />
-    <orderEntry type="library" name="android.arch.lifecycle:livedata-core-1.1.0" level="project" />
-    <orderEntry type="library" name="com.crashlytics.sdk.android:beta-1.2.5" level="project" />
-    <orderEntry type="library" name="org.jetbrains:annotations:13.0@jar" level="project" />
-    <orderEntry type="library" name="com.android.support:support-media-compat-27.1.0" level="project" />
-    <orderEntry type="library" name="com.parrot:libARUtils-3.12.6" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-analytics-impl-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.android.support:support-fragment-27.1.0" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\repos\Catroid\catroid\src\main\libs\jarchivelib-0.7.0-jar-with-dependencies.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="com.squareup.okhttp:okhttp:2.3.0@jar" level="project" />
-    <orderEntry type="library" name="com.google.firebase:firebase-iid-license-12.0.0" level="project" />
-    <orderEntry type="library" name="com.android.support:mediarouter-v7-27.1.0" level="project" />
-    <orderEntry type="library" name="com.android.support:support-v4-27.1.0" level="project" />
-    <orderEntry type="library" name="android.arch.core:runtime-1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\repos\Catroid\catroid\src\main\libs\Firmata-2.6.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\repos\Catroid\catroid\src\main\libs\flowtextview-2.0.2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-v4-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-analytics-impl-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-cast-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:rules-1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.ccil.cowan.tagsoup:tagsoup:1.2@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-core-2.3.17" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:19.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-fragment-27.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.linkedin.dexmaker:dexmaker:2.2.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:design-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.core:runtime-1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-instrumentation-1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:beta-1.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-android-sdk-4.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-2.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: com.thoughtworks.xstream:xstream:1.4.7@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-api-phone-license-12.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:2.8.47@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jakewharton.android.repackaged:dalvik-dx:7.1.0_r7@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-backend-android:1.6.2@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.sf.kxml:kxml2:2.3.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\repos\Catroid\catroid\src\main\libs\FirmataSerial-1.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:transition-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:cardview-v7-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-12.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-contrib-3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.uiautomator:uiautomator-v18-2.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-compat-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.catrobat.paintroid:paintroid-2.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-applinks:1.4.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.linkedin.dexmaker:dexmaker-mockito:2.2.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp:okhttp:2.3.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARNetwork-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.41@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARMedia-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\repos\Catroid\catroid\src\main\libs\jarchivelib-0.7.0-jar-with-dependencies.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.41@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-analytics-license-12.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.billthefarmer:mididriver-v1.13" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARStream2-3.12.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\repos\Catroid\catroid\src\main\libs\ParrotARDroneCatroidAdaptation-8a582f1dc8.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARDiscovery-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\repos\Catroid\catroid\src\main\libs\ardrone-natives-for-gradle.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-12.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy:1.6.14@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARSAL-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tagmanager-v4-impl-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARUpdater-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric.sdk.android:fabric-1.3.17" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.uiautomator:uiautomator-2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jakewharton.android.repackaged:libcore-dex:7.1.0_r7@jar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-12.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:2.5@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:customtabs-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:palette-v7-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARCommands-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-cast-12.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:multidex-1.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARMavlink-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-api-phone-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:mediarouter-v7-27.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.3.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.oliewa92:MidiDroid-v1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: tools.fastlane:screengrab-1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-base-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARDataTransfer-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-12.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-analytics-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-android:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: javax.jmdns:jmdns:3.4.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-27.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-intents-3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-core-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-analytics-impl-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.koushikdutta.async:androidasync-2.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-license-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: ar.com.hjg:pngj:2.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tagmanager-v4-impl-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:answers-1.3.13" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:arsdk-3.12.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core-3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.getkeepsafe.taptargetview:taptargetview-1.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-web-3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-box2d:1.6.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARController-3.12.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support.test.espresso:espresso-idling-resource-3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libmux-3.12.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.5.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core-1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: __local_aars__:D.\repos\Catroid\catroid\src\androidTest\libs\the-missing-android-xml-junit-test-runner-release-1.3_2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARNetworkAL-3.12.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.6.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-base-12.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:2.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARStream-3.12.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy-agent:1.6.14@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parrot:libARUtils-3.12.6" level="project" />
   </component>
 </module>

@@ -51,7 +51,7 @@ public class PhiroImpl implements Phiro {
 
 	private static final int MIN_VALUE = 0;
 	private static final int MAX_VALUE = 255;
-	private static final int PIN_SERVO_CONTROLLER = 2;
+	private static final int PIN_SERVO_CONTROLLER = 1;
 	private static final int PIN_SPEAKER_OUT = 3;
 
 	private static final int PIN_RGB_RED_RIGHT = 4;
